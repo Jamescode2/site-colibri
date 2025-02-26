@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 50px 100px 0 150px;
+    height: max-content;
+    position: relative;
+}
+
+.or {
+    color: #FFA841;
+}
+
+.espace {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    background: linear-gradient(90deg, #FFA841 0%, rgba(255, 168, 65, 0) 100%);
+    width: 90px;
+    height: calc(100% + 150px);
+    display: flex;
+    align-items: center;
+}
+
+.espace p {
+    writing-mode: vertical-rl;
+    line-height: 2.5;
+    font-size: 40px;
+    transform: rotate(180deg);
+}
+
+.cadre-blanc {
+    width: max-content;
+    margin-bottom: 30px;
+}
+
+#pourquoi,
+#objectifs,
+#pourqui,
+#mise_en_place {
+    width: 67%;
+    margin-bottom: 100px;
+}
+
+#pourquoi div,
+#objectifs div,
+#pourqui div,
+#mise_en_place div {
+    margin-bottom: 30px;
+}
+
+#pourquoi ul,
+#objectifs ul,
+#pourqui ul,
+#mise_en_place ul,
+.fond_vertical ul {
+    flex-direction: column;
+}
+
+.pourquoi_img {
+    width: 680px;
+    height: 427px;
+    background-image: url(../images/bilan/pourquoi_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pourquoi_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pourquoi_gauche {
+    width: 40%;
+}
+
+.pourquoi_gauche p {
+    text-align: center;
+}
+
+.pourquoi_droite {
+    width: 50%;
+}
+
+.pourquoi_droite p {
+    margin-top: 40px;
+}
+
+#pourqui a {
+    position: relative;
+    z-index: 1;
+    text-decoration: underline;
+    color: black;
+}
+
+#pourqui a:hover {
+    color: #FFA841;
+}
+
+.mise_en_place_block_gris {
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+
+div.btn_savoir {
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}
+
+.fond_vertical {
+    position: absolute;
+    left: 70%;
+    top: -50px;
+    right: 70px;
+    bottom: -100px;
+    background: #F5F5F5;
+    box-shadow: 47px 35px 77px rgba(0, 0, 0, 0.25);
+    padding: 100px 20px;
+}
+
+.fond_vertical div {
+    position: relative;
+    z-index: 1;
+}
+
+.bilan_competences {
+    width: 100%;
+    height: 380px;
+    background-image: url(../images/bilan/bilan_competences.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.btn_orange {
+    width: max-content;
+    background-color: #FFA841;
+    border-radius: 20px;
+    padding: 3px 20px;
+    margin: 0 auto 400px auto;
+}
+
+.btn_orange a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.potential {
+    width: 100%;
+    height: 173px;
+    background-image: url(../images/bilan/potential.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.fond {
+    position: absolute;
+    height: 800px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 30%;
+    right: -100px;
+    left: -150px;
+}
+
+@media screen and (max-width:1024px) {
+    .espace {
+        height: calc(100% + 50px);
+    }
+
+    #pourquoi,
+    #objectifs,
+    #pourqui,
+    #mise_en_place {
+        width: 100%;
+    }
+
+    #pourquoi .cadre-blanc,
+    #objectifs .cadre-blanc,
+    #pourqui .cadre-blanc,
+    #mise_en_place .cadre-blanc {
+        width: max-content;
+    }
+
+    #pourquoi div,
+    #objectifs div,
+    #pourqui div,
+    #mise_en_place div {
+        width: 100%;
+        display: block;
+    }
+
+    #pourquoi ul,
+    #objectifs ul,
+    #pourqui ul,
+    #mise_en_place ul {
+        align-items: unset;
+        padding: revert;
+        text-align: left;
+    }
+
+    .pourquoi_img {
+        height: 486px;
+    }
+
+    .fond_vertical {
+        position: static;
+    }
+
+    .btn_orange {
+        margin: 0 auto 50px auto;
+    }
+
+    .bilan_competences,
+    .potential {
+        width: 37%;
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .pourquoi_img {
+        height: 325px;
+    }
+
+    .bilan_competences,
+    .potential {
+        width: 56%;
+        margin: 10px auto;
+    }
+
+    .fond_vertical ul {
+        align-items: unset;
+        padding: revert;
+        text-align: left;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    main {
+        margin: 50px 10px 0 10px;
+    }
+
+    main div,
+    .cadre-blanc {
+        width: 90%;
+        text-align: -webkit-center;
+    }
+
+    .fond {
+        display: none;
+    }
+
+    .bilan_competences,
+    .potential,
+    .pourquoi_img {
+        background-size: contain;
+    }
+
+    .fond_vertical {
+        margin: auto;
+    }
+}

@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 50px 100px 0 150px;
+    height: max-content;
+    position: relative;
+}
+
+.or {
+    color: #FFA841;
+}
+
+.espace {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    background: linear-gradient(90deg, #FFA841 0%, rgba(255, 168, 65, 0) 100%);
+    width: 90px;
+    height: calc(100% + 50px);
+    display: flex;
+    align-items: center;
+}
+
+.espace p {
+    writing-mode: vertical-rl;
+    line-height: 2.5;
+    font-size: 40px;
+    transform: rotate(180deg);
+}
+
+.liste_ateliers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.ateliers {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 460px;
+    border-radius: 30px 30px 0 0;
+    margin: 30px;
+    background-color: rgba(255, 168, 65, 0.15);
+}
+
+.ateliers_un_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/ateliers_particulier/ateliers_un.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.ateliers_deux_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/ateliers_particulier/ateliers_deux.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.ateliers_trois_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/ateliers_particulier/ateliers_trois.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.ateliers_quatre_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/ateliers_particulier/ateliers_quatre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.ateliers_cinq_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/ateliers_particulier/atelier_cinq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.ateliers_titre {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.ateliers p {
+    padding: 0 30px;
+}
+
+.ateliers_or {
+    width: 300px;
+    margin: 30px;
+}
+
+.ateliers_or p {
+    color: #FFA841;
+}
+
+#ateliers_hypnose_adultes,
+#ateliers_dev_perso,
+#ateliers_hypnose_ados,
+#ateliers_enfants_ados {
+    margin-bottom: 100px;
+}
+
+.cadre-blanc {
+    width: max-content;
+    margin-bottom: 50px;
+}
+
+.deroulement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.deroulement_bloc_orange {
+    width: 260px;
+    height: 190px;
+    padding: 20px 20px;
+    background-color: rgba(255, 168, 65, 0.5);
+}
+
+.deroulement_desc {
+    width: calc(90% - 260px);
+}
+
+.deroulement_titre {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.programme {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.programme_programme {
+    width: 50%;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+
+.programme_programme ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.programme_objectif {
+    width: 45%;
+}
+
+#ateliers_hypnose_ados .deroulement_bloc_orange {
+    height: 220px;
+}
+
+#ateliers_enfants_ados ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ateliers_enfants_ados .deroulement,
+#ateliers_enfants_ados .programme_programme {
+    width: 90%;
+}
+
+#ateliers_enfants_ados .arbre {
+    width: 410px;
+    height: 545px;
+    background-image: url(../images/ateliers_particulier/arbre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ateliers_enfants_ados .citation {
+    width: max-content;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+    margin: 100px auto;
+}
+
+#ateliers_mieux_etre ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#ateliers_mieux_etre .deroulement,
+#ateliers_mieux_etre .programme_programme {
+    width: 90%;
+}
+
+#ateliers_mieux_etre .mieux-etre {
+    width: 410px;
+    height: 545px;
+    background-image: url(../images/ateliers_particulier/mieux-être.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fond {
+    position: absolute;
+    z-index: -1;
+    height: 950px;
+    top: 18%;
+    left: -150px;
+    right: -100px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fond2 {
+    position: absolute;
+    z-index: -1;
+    height: 950px;
+    top: 46%;
+    left: -150px;
+    right: -100px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fond3 {
+    position: absolute;
+    z-index: -1;
+    height: 1000px;
+    bottom: 0;
+    left: -150px;
+    right: -100px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #ateliers_enfants_ados .deroulement,
+    #ateliers_enfants_ados .programme,
+    #ateliers_mieux_etre .deroulement,
+    #ateliers_mieux_etre .programme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deroulement_bloc_orange,
+    #ateliers_enfants_ados .programme_programme,
+    #ateliers_mieux_etre .programme_programme,
+    .cadre-blanc {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .deroulement,
+    .programme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deroulement_desc,
+    .programme_programme,
+    .programme_objectif,
+    .cadre-blanc {
+        width: 100%;
+    }
+
+    .programme_objectif {
+        margin-top: 20px;
+    }
+
+    .programme_programme ul,
+    .programme_objectif ul,
+    #ateliers_enfants_ados ul,
+    #ateliers_mieux_etre ul {
+        align-items: unset;
+        padding: revert;
+        text-align: left;
+    }
+
+    .liste_ateliers {
+        justify-content: center;
+    }
+
+    .ateliers {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    main {
+        margin: 50px 10px 0 10px;
+    }
+
+    main div,
+    .cadre-blanc,
+    .contexte,
+    .final {
+        width: 90%;
+        text-align: -webkit-center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ateliers_enfants_ados .arbre,
+    #ateliers_mieux_etre .mieux-etre {
+        width: 300px;
+        height: 360px;
+        background-size: contain;
+    }
+
+    #ateliers_enfants_ados .citation,
+    #ateliers_enfants_ados .citation div {
+        width: auto;
+    }
+
+    .fond,
+    .fond2,
+    .fond3 {
+        display: none;
+    }
+
+}

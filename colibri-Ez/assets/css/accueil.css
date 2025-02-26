@@ -1,0 +1,231 @@
+.container_main {
+    display: grid;
+    grid-template-columns: 10% repeat(10, 1fr) 10%;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    text-align: justify;
+}
+
+.anagramme {
+    grid-area: 1 / 8 / 5 / 12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zone1 {
+    grid-area: 1 / 2 / 4 / 8;
+    display: flex;
+    align-items: center;
+}
+
+.citation {
+    width: max-content;
+    margin-top: 60px;
+    margin-right: 80px;
+    grid-area: 3 / 4 / 5 / 7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.citation div {
+    color: #424348;
+    background-color: #80B44A;
+}
+
+.zone2 {
+    grid-area: 5 / 2 / 6 / 11;
+}
+
+.fond_vertical {
+    grid-area: 1 / 8 / 8 /12;
+    position: relative;
+    z-index: -2;
+    background: #F5F5F5;
+    box-shadow: 47px 35px 77px rgba(0, 0, 0, 0.25);
+    margin-left: 20px;
+}
+
+.image {
+    grid-area: 6 / 1 / 10 / 13;
+    background-image: url(../images/accueil/meditation.png);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0 300px 0 0;
+}
+
+.btn-espaces {
+    grid-area: 7 / 7 / 8 / 11;
+    z-index: 3;
+    display: flex;
+}
+
+.btn-espaces a {
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    margin: 25px;
+    padding: 5px;
+    height: min-content;
+    text-align: center;
+}
+
+.pro {
+    color: #80B44A;
+}
+
+a:hover.pro {
+    color: #FFA841;
+}
+
+.par {
+    color: #FFA841;
+}
+
+a:hover.par {
+    color: #80B44A;
+}
+
+
+.zone3 {
+    grid-area: 9 / 6 / 10 / 11;
+    color: white;
+}
+
+.fond {
+    grid-area: 3 / 1 / 8 / 13;
+    background-image: url(../images/accueil/fond.png);
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+/* slider temoignages */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: min-content;
+    margin: 20px 0;
+}
+
+.temoignages-titre {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.temoignages {
+    margin: 0 10% 0 10%;
+    background-image: url(../images/taches/tache-verte.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.temoignages-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 230px;
+}
+
+.wrapper button {
+    color: #424348;
+    font-size: 40px;
+    width: 10%;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.temoignages-container .nom {
+    color: #424348;
+    text-align: right;
+}
+
+
+@media screen and (max-width: 882px) {
+    body {
+        background-image: url(../images/accueil/fond.png);
+        background-repeat: no-repeat;
+        background-position-y: 785px;
+    }
+
+    .container_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(50px, auto);
+        grid-row-gap: 30px;
+        margin: 5%;
+    }
+
+    .fond_vertical {
+        display: none;
+    }
+
+    .anagramme {
+        grid-area: 1/1;
+    }
+
+    .zone1 {
+        grid-area: 2/1;
+    }
+
+    .citation {
+        grid-area: 3/1;
+        margin: auto;
+    }
+
+    .zone2 {
+        grid-area: 4/1;
+    }
+
+    .btn-espaces {
+        grid-area: 5/1;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .image {
+        grid-area: 5/1;
+        border-radius: 0;
+    }
+
+    .zone3 {
+        grid-area: 6/1;
+        margin-top: 10px;
+        color: #424348;
+    }
+
+    .temoignages {
+        grid-area: 7/1;
+    }
+
+    .fond {
+        display: none;
+    }
+
+    .temoignages {
+        background-image: none;
+        background-color: white;
+        margin-top: 10px;
+        height: max-content;
+    }
+
+    .temoignages-container {
+        padding: 20px;
+    }
+}

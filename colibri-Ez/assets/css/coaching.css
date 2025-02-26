@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+img.reseaux {
+    width: 45px;
+    height: 45px;
+}
+
+main {
+    margin: 50px 100px 0 150px;
+    position: relative;
+    height: max-content;
+}
+
+.espace {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: -150px;
+    background: linear-gradient(90deg, #80B44A 0%, rgba(255, 168, 65, 0) 100%);
+    width: 90px;
+    height: calc(100% + 70px);
+    display: flex;
+    align-items: center;
+}
+
+.espace p {
+    writing-mode: vertical-rl;
+    line-height: 2.5;
+    font-size: 40px;
+    transform: rotate(180deg);
+}
+
+.fond {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    right: -100px;
+    left: -150px;
+    background-image: url(../images/accueil/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -20px;
+}
+
+
+.coaching_desc {
+    width: 60%;
+    background-color: rgba(128, 180, 74, 0.15);
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.coaching_desc p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.cadre-blanc {
+    width: max-content;
+    margin-bottom: 50px;
+}
+
+.coach_coache {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.coach_coache_image {
+    width: 300px;
+    height: 180px;
+    background-image: url(../images/Coaching.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.coach_coache_desc {
+    width: 350px;
+}
+
+.coach_coache_titre {
+    text-decoration: underline;
+}
+
+.coach_coache_desc p:first-child {
+    margin-bottom: 20px;
+}
+
+.coaching_citation {
+    width: 60%;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+}
+
+.coaching_citation p {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.coaching_avantages_titre {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
+}
+
+.coaching_avantages {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.coaching_avantages_bulle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(128, 180, 74, 0.5);
+    border-radius: 50%;
+}
+
+.coaching_avantages_desc {
+    width: calc(90% - 180px);
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+}
+
+.fond_vertical {
+    position: absolute;
+    z-index: 0;
+    left: 65%;
+    top: -50px;
+    right: 100px;
+    bottom: -20px;
+    background: #F5F5F5;
+    box-shadow: 47px 35px 77px rgba(0, 0, 0, 0.25);
+    color: #80B44A;
+    font-size: 20px;
+    padding: 40px 30px 0 30px;
+}
+
+.fond_vertical .fond_vertical_titre {
+    color: #80B44A;
+}
+
+.fond_vertical p:not(:nth-child(2)) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .coach_coache {
+        display: block;
+        width: 100%;
+    }
+
+    .coaching_citation,
+    .coach_coache_desc,
+    .coaching_desc {
+        width: 100%;
+    }
+
+    .coach_coache_image {
+        margin: 20px auto;
+    }
+
+    .fond {
+        bottom: -10px;
+        z-index: -1;
+    }
+
+    .fond_vertical {
+        position: static;
+        z-index: 0;
+    }
+
+    .espace {
+        height: calc(100% + 60px);
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .coaching_avantages {
+        flex-direction: column;
+    }
+
+    .coaching_avantages_bulle {
+        margin-bottom: 20px;
+    }
+
+    .coaching_avantages_desc {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        margin: 50px 10px 0 10px;
+    }
+
+    main div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

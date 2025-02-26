@@ -1,0 +1,681 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 50px 100px 0 150px;
+    height: max-content;
+    position: relative;
+}
+
+.espace {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    background: linear-gradient(90deg, #FFA841 0%, rgba(255, 168, 65, 0) 100%);
+    width: 90px;
+    height: calc(100% + 50px);
+    display: flex;
+    align-items: center;
+}
+
+.espace p {
+    writing-mode: vertical-rl;
+    line-height: 2.5;
+    font-size: 40px;
+    transform: rotate(180deg);
+}
+
+.diagramme {
+    width: 766px;
+    height: 700px;
+    background-image: url(../images/therapies/diagramme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.citation {
+    position: absolute;
+    top: 350px;
+    left: 52%;
+    width: max-content;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+}
+
+.citation p {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.cadre-blanc {
+    width: max-content;
+    margin-bottom: 50px;
+}
+
+.pourquoi {
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.pourquoi p:not(:first-child) {
+    text-align: end;
+}
+
+.therapies_application {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.application {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    margin: 20px;
+}
+
+.img {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_un.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_deux.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_trois.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_quatre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_cinq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img6 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_six.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_sept.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img8 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_huit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img9 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_neuf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img10 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_dix.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img11 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_onze.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img12 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_douze.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img13 {
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    height: 180px;
+    background-image: url(../images/therapies/application_treize.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gris {
+    width: 100%;
+    height: 270px;
+    margin-top: 110px;
+    padding: 80px 10px 5px 10px;
+    background-color: #F5F5F5;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.application_titre {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn_savoir.therapie_a {
+    text-align: end;
+}
+
+.therapies_application_suite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.fleche {
+    position: absolute;
+    top: 30px;
+    left: 220px;
+    width: 180px;
+    height: 150px;
+    background-image: url(../images/taches/fleche-gauche-orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(200deg);
+}
+
+.therapies_application_suite_desc {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 168, 65, 0.15);
+    width: 70%;
+}
+
+.vert {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #80B44A;
+}
+
+.therapies_application_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.therapies_application_desc_un {
+    width: 40%;
+}
+
+.therapies_application_desc_un p {
+    text-transform: uppercase;
+}
+
+.therapies_application_desc_deux {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.therapies_application_desc_deux_bulles {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.therapies_application_desc_deux_bulle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 150px;
+    background-color: rgba(255, 168, 65, 0.5);
+    border-radius: 50%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.therapies_application_desc_deux_bulles ul {
+    flex-direction: column;
+    width: 70%;
+}
+
+#concept {
+    margin-bottom: 50px;
+}
+
+#concept p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.concept_image {
+    width: 985px;
+    height: 470px;
+    background-image: url(../images/therapies/concept.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.concept_citation {
+    position: relative;
+    left: 50%;
+    width: max-content;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+}
+
+.concept_citation p {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.methode_intro {
+    margin-bottom: 100px;
+}
+
+.methode {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.methode_un_card {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 520px;
+    border-radius: 30px 30px 0 0;
+}
+
+.methode_deux_card {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 460px;
+    border-radius: 30px 30px 0 0;
+    background-color: rgba(255, 168, 65, 0.15);
+}
+
+.methode_un_card span,
+.methode_deux_card span {
+    color: #80B44A;
+}
+
+.methode_un_card_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/therapies/methode_un.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.methode_deux_card_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/therapies/methode_deux.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.methode_trois_card_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/therapies/methode_trois.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.methode_quatre_card_image {
+    width: 100%;
+    height: 180px;
+    background-image: url(../images/therapies/methode_quatre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.methode_un_card_titre {
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.methode_un_card p,
+.methode_deux_card p {
+    padding: 0 20px;
+}
+
+.methode_un_desc {
+    width: 70%;
+}
+
+.methode_un_desc .ligne {
+    text-decoration: underline;
+    color: black;
+}
+
+.methode_un_desc .PNL {
+    color: #80B44A;
+}
+
+.methode_un_desc span {
+    color: #FFA841;
+}
+
+.methode_un_desc .or {
+    text-transform: uppercase;
+    color: #FFA841;
+}
+
+.methode_un_desc_citation {
+    width: max-content;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+    margin: 0 auto 20px;
+}
+
+.methode_un_desc_citation p {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.methode_un_desc ul {
+    flex-direction: column;
+}
+
+.methode_un_desc .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.methode_un_desc .methode_un_desc_img {
+    width: 330px;
+    height: 190px;
+    background-image: url(../images/therapies/EFT.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.en_bref {
+    display: flex;
+    justify-content: space-between;
+}
+
+.en_bref_un,
+.en_bref_deux {
+    width: 45%;
+}
+
+.en_bref_un p {
+    margin-bottom: 20px;
+}
+
+.en_bref_deux p:first-child {
+    margin-top: 40px;
+}
+
+.en_bref_deux p {
+    text-align: center;
+    font-size: 20px;
+    color: #80B44A;
+}
+
+.en_bref_citation {
+    width: max-content;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    padding: 20px 15px;
+    margin-left: 20px;
+    margin: 100px 0 50px 150px;
+}
+
+.en_bref_citation p {
+    margin-top: 25px;
+    text-align: right;
+    color: #FFA841;
+}
+
+.fond {
+    position: absolute;
+    z-index: -1;
+    height: 1030px;
+    top: 43%;
+    left: -150px;
+    right: -100px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fond2 {
+    position: absolute;
+    z-index: -1;
+    height: 650px;
+    bottom: 0;
+    left: -150px;
+    right: -100px;
+    background-image: url(../images/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:1024px) {
+
+    .methode_un_desc ul,
+    .therapies_application_desc_deux_bulles ul {
+        align-items: unset;
+        padding: revert;
+        text-align: left;
+    }
+
+    .espace {
+        height: calc(100% + 100px);
+    }
+
+    .citation,
+    .concept_citation,
+    .fleche {
+        position: static;
+    }
+
+    .diagramme {
+        width: 400px;
+        height: 366px;
+    }
+
+    .concept_image {
+        width: 490px;
+        height: 250px;
+    }
+
+    .pourquoi,
+    .application {
+        margin: auto;
+    }
+
+    .en_bref_citation {
+        margin: 50px auto;
+    }
+
+    .therapies_application_suite,
+    .therapies_application_desc,
+    .methode,
+    .methode_un_desc .flex,
+    .en_bref,
+    .therapies_application_desc_deux_bulles {
+        display: block;
+    }
+
+    .en_bref_un,
+    .en_bref_deux,
+    .therapies_application_suite_desc,
+    .methode_un_desc,
+    .therapies_application_desc_un,
+    .therapies_application_desc_deux,
+    .therapies_application_desc_deux_bulles ul {
+        width: 100%;
+    }
+
+    .fleche {
+        display: none;
+    }
+
+    .therapies_application_desc_un {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .methode_un_desc,
+    .methode_un_card,
+    .methode_deux_card,
+    .concept_citation,
+    .citation,
+    .diagramme,
+    .therapies_application_desc_deux_bulle,
+    .concept_image {
+        margin: 20px auto;
+    }
+
+    .img13 {
+        top: -87px;
+    }
+
+    .methode2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    main {
+        margin: 50px 10px 0 10px;
+    }
+
+    main div,
+    .cadre-blanc,
+    .contexte,
+    .final,
+    .citation,
+    .citation div {
+        width: 90%;
+        text-align: -webkit-center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .en_bref_un,
+    .en_bref_deux,
+    .therapies_application_suite_desc,
+    .methode_un_desc,
+    .therapies_application_desc_un,
+    .therapies_application_desc_deux,
+    .therapies_application_desc_deux_bulles ul,
+    .methode_un_desc,
+    .methode_un_card,
+    .methode_deux_card,
+    .concept_citation,
+    .concept_citation div,
+    .citation,
+    .citation div,
+    .therapies_application_desc_deux_bulle,
+    .en_bref_citation,
+    .en_bref_citation div,
+    .methode_un_desc_citation {
+        width: 90%;
+    }
+
+    .fond,
+    .fond2 {
+        display: none;
+    }
+
+    .diagramme {
+        width: 300px;
+        height: 280px;
+    }
+
+    .concept_image {
+        width: 310px;
+        height: 150px;
+    }
+
+    .methode_un_desc .methode_un_desc_img {
+        width: 250px;
+        height: 145px;
+    }
+
+    .therapies_application {
+        justify-content: center;
+    }
+
+}

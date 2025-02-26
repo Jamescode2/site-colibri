@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.citation div {
+    width: max-content;
+    border-radius: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+.guillemet {
+    width: 20px;
+}
+
+.anagramme img {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 185px;
+}
+
+.texte-or {
+    color: #FFA841;
+    font-size: 20px;
+}
+
+.texte-vert {
+    color: #80B44A;
+}
+
+.texte_uppercase {
+    text-transform: uppercase;
+}
+
+.texte_underline {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.marg-top {
+    margin-top: 20px;
+}
+
+.h2 {
+    margin: 5px;
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+    color: #424348;
+    font-size: 14px;
+}
+
+ul li {
+    color: #424348;
+    font-size: 14px;
+}       
+
+h1 {
+    font-size: 24px;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.titre-citation {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin: 0;
+    color: #f0f0f0;
+}
+
+.titre-citation2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin: 0;
+    color: #f0f0f0;
+    text-align: end;
+}
+
+.titre {
+    background: -webkit-linear-gradient(left, #80B44A 50%, #FFA841 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    padding: 2px 20px;
+}
+
+.cadre-blanc {
+    border: double 2px transparent;
+    border-radius: 0 40px 0 40px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #80B44A, #FFA841);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cadre-gris {
+    border: double 2px transparent;
+    border-radius: 0 40px 0 40px;
+    background-image: linear-gradient(#424348, #424348), radial-gradient(circle at top left, #80B44A, #FFA841);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cadre-orange {
+    border: double 2px transparent;
+    border-radius: 0 40px 0 40px;
+    background-image: linear-gradient(#FFA84126, #FFA84126), radial-gradient(circle at top left, #80B44A, #FFA841);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cadre-vert {
+    border: double 2px transparent;
+    border-radius: 0 40px 0 40px;
+    background-image: linear-gradient(#ecf4e4, #ecf4e4), radial-gradient(circle at top left, #80B44A, #FFA841);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cadre-blanc-titre {
+    width: max-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+div.btn_savoir {
+    text-align: center;
+    margin: 10px;
+    background: -webkit-linear-gradient(left, #80B44A 50%, #FFA841 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 2px 20px;
+}
+
+div.btn_savoir a {
+    border: double 2px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #80B44A, #FFA841);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 2px 5px;
+}
+
+.champs-saisie {
+    display: flex;
+    justify-content: space-between;
+}
+
+.champs-saisie input {
+    width: 45%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.btn-submit {
+    background-color: #FFA841;
+    border-radius: 10px;
+    padding: 0px 15px;
+    border: none;
+    cursor: pointer;
+    color: #424348;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+
+
+@media (max-width: 1024px) {
+    .champs-saisie {
+        flex-direction: column;
+    }
+
+    .champs-saisie input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    button#scrollToTopButton.visible {
+        display: block;
+    }
+}
+
+

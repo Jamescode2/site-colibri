@@ -1,0 +1,186 @@
+footer h1 {
+    font-size: 10px;
+    display: inline;
+    padding: 0;
+}
+
+.container {
+    background-color: #424348;
+    display: grid;
+    grid-template-columns: 10% repeat(10, 1fr) 10%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.form {
+    width: 100%;
+}
+
+.form_contact {
+    grid-area: 1 / 8 / 3 / 12;
+    z-index: 5;
+}
+
+.form_news {
+    grid-area: 1 / 2 / 3 / 6;
+    z-index: 5;
+}
+
+p.news {
+    color: white;
+}
+
+
+.vague {
+    grid-area: 1 / 1 / 4 / 13;
+    background-image: url(../images/pied-page/Rectangle29.png);
+    background-size: 100% 302px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    z-index: 1;
+}
+
+.mentions {
+    grid-area: 4 / 1 / 5 / 13;
+    background-color: #E8E8E8;
+    z-index: 2;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+}
+
+.mentions li {
+    font-size: 10px;
+    height: auto;
+    width: max-content;
+    float: left;
+    text-align: center;
+    list-style: none;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.mentions a {
+    font-size: 10px;
+    padding: 0 0 5px 0;
+    text-decoration: none;
+    color: #424348;
+    display: block;
+}
+
+.mentions a:hover {
+    color: #80B44A;
+}
+
+
+.coordo {
+    grid-area: 3 / 2 / 4 / 9;
+    z-index: 2;
+    display: flex;
+}
+
+.coordo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    color: #424348;
+}
+
+.reseaux {
+    grid-area: 3 / 8 / 4 / 12;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+div.logo-reseaux {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+img.reseaux {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+
+@media (max-width: 882px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(50px, auto);
+        grid-row-gap: 30px;
+        padding: 10px;
+    }
+
+    .form_news {
+        grid-area: 1/1;
+        width: 70%;
+        margin-left: 15%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_contact {
+        grid-area: 2/1;
+        width: 70%;
+        margin-left: 15%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input {
+        align-items: center;
+    }
+
+    .coordo {
+        grid-area: 3/1;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .coordo div p {
+        color: white;
+    }
+
+    .coordo div {
+        align-items: center;
+    }
+
+    .reseaux {
+        grid-area: 4/1;
+        margin: auto;
+        color: white;
+    }
+
+    .mentions {
+        grid-area: 5/1;
+        height: min-content;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .vague {
+        display: none;
+    }
+}
